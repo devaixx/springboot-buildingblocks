@@ -7,8 +7,10 @@
 	import javax.persistence.Table;
 	//Entity 
 	// and
-	@Entity  
-	@Table(name = "user")
+	@Entity
+	//Pq j'ai changé le nom de la table ?
+	//https://blog.dkwr.de/development/fix-h2-error-expected-identifeir/ (User is a reserved keyword)
+	@Table(name = "users")
 	public class User {
 	
 		@Id
